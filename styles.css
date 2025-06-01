@@ -11,7 +11,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a:hover,
@@ -46,7 +46,7 @@ header .contact a {
 header .contact a:hover,
 header .contact a:focus {
   background-color: rgba(255, 255, 255, 0.6);
-  color: #002200;
+  color: #ffffff; /* Ensures hover color matches body text */
   outline: none;
 }
 
