@@ -1,3 +1,5 @@
+/* === General styles === */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,6 +9,7 @@ body {
   padding: 0 20px;
   position: relative;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 a {
@@ -25,6 +28,8 @@ a:focus {
 header {
   text-align: center;
   padding: 40px 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 header h1 {
@@ -55,6 +60,8 @@ header .contact a:focus {
 section {
   margin: 40px auto;
   max-width: 900px;
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
@@ -89,6 +96,8 @@ footer {
   text-align: center;
   margin: 40px 0;
   font-size: 0.9em;
+  position: relative;
+  z-index: 2;
 }
 
 .education-columns {
@@ -118,8 +127,103 @@ body::after {
   transform: translate(-50%, -50%);
   font-size: 80vw; /* Large and responsive */
   opacity: 0.05;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
+}
+
+/* === Bubbling effect CSS === */
+
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* So it doesn't block clicks */
+  overflow: hidden;
+  z-index: 0; /* Behind all content */
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px; /* Start below viewport */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation-name: bubble-move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
+}
+
+@keyframes bubble-move {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(100px) translateY(-110vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.bubble:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  left: 10%;
+  animation-duration: 18s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 25%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  left: 40%;
+  animation-duration: 20s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  width: 25px;
+  height: 25px;
+  left: 55%;
+  animation-duration: 17s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 70%;
+  animation-duration: 22s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+  width: 15px;
+  height: 15px;
+  left: 85%;
+  animation-duration: 16s;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(7) {
+  width: 28px;
+  height: 28px;
+  left: 95%;
+  animation-duration: 19s;
+  animation-delay: 3.5s;
 }
