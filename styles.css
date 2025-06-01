@@ -32,6 +32,7 @@ h2 {
   border-bottom: 2px solid #ffffff;
   padding-bottom: 5px;
 }
+
 .coursework-list {
   columns: 2; /* creates two columns for better readability */
   -webkit-columns: 2;
@@ -56,4 +57,27 @@ footer {
   text-align: center;
   margin: 40px 0;
   font-size: 0.9em;
+}
+
+/* --- Added styles for Education two-column layout --- */
+
+/* Container for the two columns in Education */
+.education-columns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  margin-bottom: 1rem;
+}
+
+/* Each column shares equal space */
+.education-columns > div {
+  flex: 1 1 300px; /* grow, shrink, basis */
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (max-width: 600px) {
+  .education-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
