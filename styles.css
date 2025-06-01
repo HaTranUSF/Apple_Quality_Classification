@@ -64,7 +64,7 @@ footer {
 /* Container for the two columns in Education */
 .education-columns {
   display: flex;
-  gap: 160px;
+  gap: 220px;
   flex-wrap: wrap; /* allow wrapping on small screens */
   margin-bottom: 1rem;
 }
