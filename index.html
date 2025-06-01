@@ -5,28 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ha Tran | Data Scientist</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Contact buttons styling */
+    .contact {
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 4px 8px;
+      padding: 6px 12px;
+      background-color: #e0f2ff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #cce4ff;
+    }
+    /* Education columns */
+    .education-columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .education-columns > div {
+      flex: 1 1 300px;
+    }
+    /* Coursework list */
+    .coursework-list {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    /* Projects spacing */
+    .project {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Ha Tran</h1>
     <p>Data Scientist | Artificial Intelligence and Business Analytics & Econometrics and Quantitative Economics @ USF | AI Enthusiast</p>
     <div class="contact">
-      <a href="tel:+18133379600"> +1(813)337-9600 </a> |
-      <a href="mailto:mhaftran@gmail.com">mhaftran@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/mhatran" target="_blank">LinkedIn</a> |
-      <a href="https://hatranusf.github.io/Portfolio_/">GitHub</a>
+      <a class="btn" href="tel:+18133379600">📞 +1 (813) 337-9600</a>
+      <a class="btn" href="mailto:mhaftran@gmail.com">✉️ mhaftran@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/mhatran" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+      <a class="btn" href="https://github.com/hatranusf" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
     </div>
   </header>
 
- <section>
-  <h2>About Me</h2>
-  <p>
-    I'm a double major in Artificial Intelligence & Business Analytics and Econometrics at the University of South Florida (May 2026), passionate about turning complex data into meaningful solutions. During an incredible internship at Princeton, I built scalable Tableau dashboards for multi-million-row datasets, automated reporting with Power Automate, and created tools that saved hours of manual work. With a strong foundation in Python, R, SQL, and BI tools, I thrive on uncovering insights, streamlining processes, and making a real-world impact through data.
-  </p>
-</section>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a double major in Artificial Intelligence & Business Analytics and Econometrics at the University of South Florida (May 2026), passionate about turning complex data into meaningful solutions. As an intern at Princeton University, I had the opportunity to build scalable Tableau dashboards for multi-million-row datasets, automate reporting with Power Automate, and develop tools that saved teams hours of manual work. With a strong foundation in Python, R, SQL, and BI platforms, I thrive on uncovering insights, streamlining processes, and creating real-world impact through data.
+    </p>
+  </section>
+
   <section>
     <h2>Education</h2>
-
     <h3>🐂 University of South Florida</h3>
     <div class="education-columns">
       <div>
@@ -34,13 +73,11 @@
         <p><strong>Bachelor of Science</strong> in Econometrics and Quantitative Economics</p>
         <p>GPA: 3.98</p>
       </div>
-
       <div>
-        <p><em>🎓Expected Graduation: May 2026</em></p>
+        <p><em>🎓 Expected Graduation: May 2026</em></p>
         <p>📍 Tampa, FL</p>
       </div>
     </div>
-
     <h4>📘 Relevant Coursework</h4>
     <ul class="coursework-list">
       <li>Python for Business Analytics</li>
@@ -51,6 +88,7 @@
       <li>Introduction to Econometrics</li>
     </ul>
   </section>
+
   <section>
     <h2>Experience</h2>
     <h3>🐯 Business Intelligence Intern — Princeton University</h3>
@@ -66,6 +104,7 @@
       <li>Contributed to 40% of monthly deals using digitized workflows</li>
     </ul>
   </section>
+
   <section>
     <h2>Projects</h2>
     <div class="project">
@@ -90,15 +129,16 @@
       <li><strong>Concepts:</strong> Data Modeling, Machine Learning, Visualization, ETL</li>
     </ul>
   </section>
+
   <section>
     <h2>Certifications</h2>
-     <ul>
+    <ul>
       <li>Peer Leader, Muma Corporate Mentor Program</li>
       <li>Google Data Analytics Professional Certificate</li>
       <li>USF Muma Citizen Data Science Certified</li>
     </ul>
   </section>
-  
+
   <footer>
     <p>© 2025 Ha Tran | Built with 💻 and ☕</p>
   </footer>
