@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #003300;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -16,7 +16,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #002200;
+  color: #ffffff;
   text-decoration: underline;
 }
 
